@@ -1,0 +1,11 @@
+http://archive.apache.org/dist/hadoop/core/hadoop-2.7.6/hadoop-2.7.6.tar.gz
+http://archive.apache.org/dist/hbase/1.4.8/hbase-1.4.8-bin.tar.gz
+http://www.mirrorservice.org/sites/ftp.apache.org/flume/1.7.0/apache-flume-1.7.0-bin.tar.gz
+http://archive.apache.org/dist/hive/hive-2.3.3/apache-hive-2.3.3-bin.tar.gz
+http://apache.mirror.anlx.net/pig/pig-0.17.0/pig-0.17.0.tar.gz
+http://archive.apache.org/dist/spark/spark-2.3.0/spark-2.3.0-bin-hadoop2.7.tgz
+http://mirror.ox.ac.uk/sites/rsync.apache.org/sqoop/1.4.7/sqoop-1.4.7.bin__hadoop-2.6.0.tar.gz
+https://downloads.apache.org/tez/0.9.1/apache-tez-0.9.1-bin.tar.gz
+https://downloads.apache.org/zeppelin/zeppelin-0.8.2/zeppelin-0.8.2.tgz
+https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar
+
