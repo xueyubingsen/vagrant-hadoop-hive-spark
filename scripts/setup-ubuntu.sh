@@ -12,6 +12,20 @@ function setupHosts {
 	rm -f /etc/nhosts
 }
 
+function setupAptsource {
+	echo "***********modifying apt source to tsinghua"
+	echo "deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse"  > /etc/apt/sources.list
+	echo "# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse"   >> /etc/apt/sources.list
+	echo "deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse"   >> /etc/apt/sources.list
+	echo "# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse"   >> /etc/apt/sources.list
+	echo "deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse"   >> /etc/apt/sources.list
+	echo "# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse"   >> /etc/apt/sources.list
+	echo "deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse"   >> /etc/apt/sources.list
+	echo "# deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse"  >> /etc/apt/sources.list
+	apt-get update
+}
+
+
 function setupSwap {
     # setup swapspace daemon to allow more memory usage.
     apt-get install -y swapspace
@@ -48,6 +62,10 @@ echo "setup ubuntu"
 
 echo "setup hosts file"
 setupHosts
+
+echo "setup apt source"
+setupAptsource
+
 
 echo "setup ssh"
 installSSHPass
